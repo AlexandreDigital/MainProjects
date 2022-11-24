@@ -1,103 +1,80 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
 body {
-    background-color: #1E1E1E;
+    margin: 0, 0;
+    padding: 0, 0;
+    background:linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
 
 .container {
-    position: absolute;
-    width: 750px;
-    height: 550px;
-    margin-left: 237px;
-    margin-top: 50px;
-    background: #373636;
-    border: 1px solid black;
-    border-radius: 25px;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 500px;
+    align-items: center;
+    background-color: #eeecec;
+    border: 2px solid #9a07cf81;
+    border-radius: 10px;
+}
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-size: 30px;
+    font-family: 'bebas neue';
+    color: #BD00FF80;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    font-size: 55px;
-    font-weight: 400;
-    line-height: 66px;
-    color: #B78400;
-    font-family: 'Bebas neue'
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.arithmetic {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.bx {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
-.display {
-    width: 348px;
-    height: 170px;
-    border: 1px solid black;
-}
-
-.btn-plus,.btn-minus {
-    height: 60px;
+.calc {
+    font-size: 30px;
+    font-family: 'bebas neue';
+    color: #BD00FF80;
+    height: 50px;
+    width: 140px;
+    margin-top: 40px;
+    border: 2px solid #9902cf8e;
     border-radius: 10px;
-    border: none;
-    background: #4B4949;
-}
-
-
-.display {
-    border-radius: 10px;
-    border: none;
-    background: #4B4949;
-}
-
-.reset-div {
-    display: flex;
-    justify-content: center;
-    
-}
-.para-1,.para-2 {
-    text-align: center;
-    width: 60px;
-    font-weight: 400;
-    padding: 10px 40px;
-    border-radius: 10px;
-    background-color: #4B4949;
-    border: none;
-    color: #B78400;
-    cursor: pointer;
-}
-.para-3 {
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 66px;
-    padding: 10px 40px;
-    border-radius: 10px;
-    background-color: #4B4949;
-    border: none;
-    color: #B78400;
-    font-family: 'Bebas neue';
     cursor: pointer;
 }
 
-.display {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.first-number,.second-number {
+    font-size: 20px;
+    font-family: 'bebas neue';
+    height: 20px;
+    border: 2px solid #9902cf8e;
+    background-color: #eeecec;
 }
 
-.calculator-number {
-    font-size: 70px;
-    color: #B78400;
+.result {
+    font-size: 30px;
+    font-family: 'bebas neue';
+    background-color: #eeecec;
+    border-radius: 10px;
+    border: 2px solid #9902cf8e;
+    height: 40px;
+    width: 220px;
 }
 
-.para-1,.para-2 {
-    font-weight: 900;
-    font-size: 40px;
-    color: #B78400;
+input:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #000;
+    background: rgba(248, 165, 241, 0.719);
 }

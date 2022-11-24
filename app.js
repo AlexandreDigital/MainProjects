@@ -1,18 +1,15 @@
-const counter = document.querySelector('.calculator-number')
+function calc()
 
-let count = 0
+{
+    const n1 = parseInt(document.getElementById('n1').value);
+    const n2 = parseInt(document.getElementById('n2').value);
+    const oper = document.getElementById('operator').value;
 
-function changeCounter(para) {
-    if (para == plus) {
-        count += 1;
-    } else if(para == minus){
-        if (count <= 0) {
-            count = 1;
-        }
-        count -= 1;
-    } else if(para == reset){
-        count = 0;
+    if(oper === '+') 
+    {
+        document.getElementById('result').value = n1 + n2;
     }
-
-    counter.innerHTML = count;
 }
+
+
+
